@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+   box-sizing: border-box;
+}
+body{
+  font-size: 1.8rem;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  pointer-events: none;
+}
+#item-count{
+  background-color: transparent;
+  border: none;
+  color: #9495a5;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-family: inherit;
+}
+.btn{
+  font-weight: bold;
+}
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  background: url("images/bg-desktop-light.jpg");
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-size: 100vw auto ; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+[theme="maincontainer"].container{
+  background: url("images/bg-desktop-dark.jpg");
+  background-color: #171823;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-box{
+  width: 100%;
+  max-width: 540px;
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7rem 0 0 0;
+}
+.todo-txt{
+  color: white;
+   font-weight: bold;
+   font-size: 2rem;
+   line-height: 2rem;
+   letter-spacing: 5px;
+}
+.icon-img{
+  background-color: transparent;
+  border:none;
+}
+.input-box{
+  width:100%;
+  background-color: white;
+  padding: 2rem 2.4rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 4.8rem;
+  margin-bottom: 2.4rem;
+  border: 1px solid #e3e4f1;
+}
+.circle,circle:checked{
+  width:24px;
+  height: 15px;
+  border: 1px solid #e3e4f1;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.input-box, input-box::-webkit-input-placeholder {
+  font-size: 1.8rem;
+  border: none;
+  font-family: inherit;
+  line-height: 2rem;
+  flex: 1 0;
+  margin-left: 2rem;
+  background: transparent;
+}
+.input-box{
+    outline: none;
+ 
+}
+.todo-list{
+    border-top: 1px solid #e3e4f1;
+    border-left: 1px solid #e3e4f1;
+    border-right: 1px solid #e3e4f1;
+ 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.todo-list:first-child {
+  overflow: hidden;
+}
+.todo-img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid  #e3e4f1;
+  padding: 2rem 2.4rem;
+}
+[theme="maincontainer"] .todo-img {
+  background-color: #25273D;
+ }
+
+ .todo-img p {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.todo-img--hide {
+  display: none;
+}
+
+.todo-img--checked p {
+  color: #D1D2DA;
+  text-decoration: line-through;
+}
+[theme="maincontainer"] .todo-img--checked p{
+  color: #4D5067;
+}
+
+/* .bg-light{
+  width: 100%;
+  height: 350px;
+}
+.bg-dark{
+  width:100% ;
+  height:350px ;
+}
+
+.todo-box{
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+
+.main-box{
+  width: 30rem;
+  margin: auto;
+  margin-top: -15rem;
+
+
+  
+}
+
+.input-box{
+  margin-top: 35px;
+}
+
+.input-box input{
+  width: 100%;
+  padding: 0.8rem;
+  border-width: 1px;
+  border-radius: .5rem;
+}
+
+.todo-list-box{
+   background-color: white;
+}
+
+.todo-list{
+  background-color: white;
+}
+
+.status-box{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+
+
+ul li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav{
+  display: flex;
+}
+
+
+.nav li{
+  margin: 0rem 0.3rem;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.btn{
+  color: grey;
+}
+.btn:hover{
+  color: black;
+}
+
+#active{
+  color: blue;
+} */
+
+/*a[class="btn"]:hover{
+  color:black;
+}
+*/
+
+
+/* .active{
+  color: blue;
+}  */

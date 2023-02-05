@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script src="main.js"></script>
+  <link rel="icon" href="favicon-32x32.png">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="main1" theme="maincontainer">
+  <div class="container">
+    <!-- <img src="images/bg-desktop-light.jpg" alt="desktop_image_light" class="bg-light"> -->
+     <div class="main-box">
+      <div class="todo-box">
+        <section class="logo">
+        <h1 class="todo-txt">TODO</h1>
+        <button class="icon-img">
+        <img src="images/icon-moon.svg" alt="icon-moon" class="todo-img">
+        <img src="images/icon-sun.svg" alt="">
+      </button>
+    </section>
+      </div>
+      <div class="input-box">
+        <!-- <button></button> -->
+        <div class="circle"> </div>
+        <input type="text" class="input-box" placeholder="creat a new todo..." id="input-box" aria-label="input-box">
+     
+      </div>
+      <div class="todo-list-box">
+        <ul class="todo-list"></ul>
+          <li class="status-box">
+            <p>
+              <span id="item-count">0</span> items left
+            </p>
+            <ul class="nav">
+              <li><a href="" class="btn">All</a></li>
+              <li><a href="" class="btn">Active</a></li>
+              <li><a href="" class="btn">Completed</a></li>
+            </ul>
+            <div class="clear-btn">
+              <a href="" class="btn">Clear Completed</a>
+            </div>
+          </li>
+        
+      </div>
+
+    </div>
+    <p class="footer-txt">Drag and drop to reader list</p>
+  </div>
+</body>
+
+</html>
